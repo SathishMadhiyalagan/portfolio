@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sathish Madhiyalagan</title>
+  <title>About Me</title>
   <link rel="icon" href="images/logo.svg" sizes="32x32">
   <!-- Include Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +21,7 @@
   </script>
   <!-- Include custom styles -->
   <link href="css/index.css" rel="stylesheet">
+  <link href="css/owncss.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
@@ -35,6 +36,9 @@
 </head>
 
 <body>
+
+  <!-- Nav Bar Section -->
+
   <nav class="bg-[#D9E5EB] border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between">
       <a href="#" id="portfolio-link" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -51,19 +55,20 @@
         </svg>
       </button>
       <div class="hidden w-full md:w-auto md:block bg-[#D9E5EB]" id="navbar-default">
-        <ul class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul
+          class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
             <a href="aboutMe.html"
-              class="block py-2 px-3 text-[#506169] rounded md:bg-transparent md:text-[#506169] md:p-0 dark:text-white md:dark:text-blue-500"
+            class="block py-2 px-3 text-[#506169] rounded md:bg-transparent md:text-[#506169] md:p-0 dark:text-white md:dark:text-blue-500"
               aria-current="page">About me</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Work</a>
+            <a href="experience.html"
+              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            <a href="education.html"
+              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Education</a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/sathish-madhiyalagan-be-python-developer/" target="_blank"
@@ -82,6 +87,33 @@
       aria-current="page">About me</a>
   </li> -->
 
+  <!-- Section 1 -->
+
+
+  <div class="flex items-center justify-center h-screen">
+    <div class="text-center bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-[#6a6a6a] dark:text-white">About Me</h1>
+      <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">This page is currently under construction. Please check back soon for updates!</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer Section -->
+
+
+
+  <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-base font-normal text-[#506169] text-center">The World is waiting for you, don't waste
+        your time.</span>
+    </div>
+  </footer>
+
+
+
   <script>
     // Redirect based on domain name
     const portfolioLink = document.getElementById('portfolio-link');
@@ -94,7 +126,7 @@
     }
 
     // Mobile menu toggle
-    document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('menu-button').addEventListener('click', function () {
       const menu = document.getElementById('navbar-default');
       menu.classList.toggle('hidden');
     });
