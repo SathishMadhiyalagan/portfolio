@@ -1,136 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education</title>
-  <link rel="icon" href="images/logo.svg" sizes="32x32">
-  <!-- Include Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            customColor: '#7da832',
-          }
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <link rel="icon" href="images/logo.svg" sizes="32x32" />
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              customColor: "#7da832",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Include custom styles -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/owncss.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .logoName {
+        font-family: "Fredericka the Great", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #506169;
       }
-    }
-  </script>
-  <!-- Include custom styles -->
-  <link href="css/index.css" rel="stylesheet">
-  <link href="css/owncss.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-  <style>
-    .logoName {
-      font-family: "Fredericka the Great", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: #506169;
-    }
-  </style>
-</head>
+    </style>
+  </head>
 
-<body>
+  <body>
+    <!-- Nav Bar Section -->
 
-  <!-- Nav Bar Section -->
-
-  <nav class="bg-[#D9E5EB] border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between">
-      <a href="#" id="portfolio-link" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="images/logo.svg" class="h-10" alt="Logo" />
-        <span class="text-xl md:text-2xl font-semibold logoName">Sathish Madhiyalagan</span>
-      </a>
-      <button id="menu-button" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
-      <div class="hidden w-full md:w-auto md:block bg-[#D9E5EB]" id="navbar-default">
-        <ul
-          class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="aboutMe.html"
-              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              aria-current="page">About me</a>
-          </li>
-          <li>
-            <a href="experience.html"
-              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
-          </li>
-          <li>
-            <a href="education.html"
-              class="block py-2 px-3 text-[#506169] rounded md:bg-transparent md:text-[#506169] md:p-0 dark:text-white md:dark:text-blue-500">Education</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/sathish-madhiyalagan-be-python-developer/" target="_blank"
-              class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent flex items-center">
-              LinkedIn <img src="images/linkedinLight.svg" class="h-6 px-1" alt="LinkedIn Logo" />
-            </a>
-          </li>
-        </ul>
+    <nav class="bg-[#D9E5EB] border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between"
+      >
+        <a
+          href="#"
+          id="portfolio-link"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="images/logo.svg" class="h-10" alt="Logo" />
+          <span class="text-xl md:text-2xl font-semibold logoName"
+            >Sathish Madhiyalagan</span
+          >
+        </a>
+        <button
+          id="menu-button"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="hidden w-full md:w-auto md:block bg-[#D9E5EB]"
+          id="navbar-default"
+        >
+          <ul
+            class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="aboutMe.html"
+                class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page"
+                >About me</a
+              >
+            </li>
+            <li>
+              <a
+                href="experience.html"
+                class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                href="education.html"
+                class="block py-2 px-3 text-[#506169] rounded md:bg-transparent md:text-[#506169] md:p-0 dark:text-white md:dark:text-blue-500"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sathish-madhiyalagan-be-python-developer/"
+                target="_blank"
+                class="block py-2 px-3 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent flex items-center"
+              >
+                LinkedIn
+                <img
+                  src="images/linkedinLight.svg"
+                  class="h-6 px-1"
+                  alt="LinkedIn Logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/SathishMadhiyalagan/"
+                target="_blank"
+                class="block py-2 px-2 text-[#6E7F87] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#506169] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent flex items-center"
+              >
+                Github
+                <img
+                  src="images/gitlogo.svg"
+                  class="h-6 px-1"
+                  alt="LinkedIn Logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- <li>
+    <!-- <li>
     <a href="aboutMe.html"
       class="block py-2 px-3 text-[#506169] rounded md:bg-transparent md:text-[#506169] md:p-0 dark:text-white md:dark:text-blue-500"
       aria-current="page">About me</a>
   </li> -->
 
-  <!-- Section 1 -->
+    <section class="max-w-screen-lg mx-auto p-6 md:p-12">
+      <div class="flex flex-col space-y-6">
+        <!-- Education Card: Post Graduate Programme in Data Science & AI -->
+        <div class="bg-[#f3f4f6] dark:bg-[#1f2937] p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold mb-4 text-[#506169]">
+            Post Graduate Programme in Data Science & AI
+          </h2>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li>
+              <strong>Institution:</strong> upGrad.com | International Institute
+              of Information Technology Bangalore
+            </li>
+            <li><strong>Duration:</strong> Nov 2023 - Oct 2024</li>
+            <li><strong>Status:</strong> Currently studying</li>
+          </ul>
+          <h3 class="text-lg font-semibold mt-4 text-[#506169]">Skills:</h3>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li>Python</li>
+            <li>Data Science</li>
+            <li>SQL</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>AI</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Scikit-learn</li>
+          </ul>
+        </div>
 
+        <!-- Education Card: Python Fullstack Developer (Django) and Data Science -->
+        <div class="bg-[#f3f4f6] dark:bg-[#1f2937] p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold mb-4 text-[#506169]">
+            Python Fullstack Developer (Django) and Data Science
+          </h2>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li><strong>Institution:</strong> Palle Technologies</li>
+            <li><strong>Duration:</strong> Mar 2021 - Sep 2021</li>
+            <li><strong>Status:</strong> Completed course</li>
+          </ul>
+          <h3 class="text-lg font-semibold mt-4 text-[#506169]">Skills:</h3>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li>Python</li>
+            <li>Data Science</li>
+            <li>SQL</li>
+            <li>Git</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>AI</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Scikit-learn</li>
+            <li>Databases</li>
+            <li>Django</li>
+          </ul>
+        </div>
 
+        <!-- Education Card: Bachelor of Engineering in Mechanical Engineering -->
+        <div class="bg-[#f3f4f6] dark:bg-[#1f2937] p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold mb-4 text-[#506169]">
+            Bachelor of Engineering in Mechanical Engineering
+          </h2>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li>
+              <strong>Institution:</strong> Anand Institute Of Higher Technology
+            </li>
+            <li><strong>Duration:</strong> Sep 2012 - May 2016</li>
+            <li><strong>Grade:</strong> 6.77 (First Class)</li>
+          </ul>
+        </div>
 
-  <div class="flex items-center justify-center h-screen">
-    <div class="text-center bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-[#6a6a6a] dark:text-white">Education</h1>
-      <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">This page is currently under construction. Please check back soon for updates!</p>
+        <!-- Education Card: Biomathematics -->
+        <div class="bg-[#f3f4f6] dark:bg-[#1f2937] p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold mb-4 text-[#506169]">
+            Biomathematics
+          </h2>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li><strong>Institution:</strong> Sendhil Matric Hr Sec School</li>
+            <li><strong>Duration:</strong> Jun 2010 - May 2012</li>
+            <li><strong>Grade:</strong> 83.0%</li>
+          </ul>
+        </div>
+
+        <!-- Education Card: 10th Standard, State Board -->
+        <div class="bg-[#f3f4f6] dark:bg-[#1f2937] p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold mb-4 text-[#506169]">
+            10th Standard, State Board
+          </h2>
+          <ul class="list-disc ml-5 text-[#6a6a6a] dark:text-[#d1d5db]">
+            <li>
+              <strong>Institution:</strong> St. Joseph's High School,
+              Sesurajapuram
+            </li>
+            <li><strong>Duration:</strong> Jun 2009 - May 2010</li>
+            <li><strong>Grade:</strong> 83.6%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span class="block text-base font-normal text-[#506169] text-center"
+          >The World is waiting for you, don't waste your time.</span
+        >
+      </div>
+    </footer>
+
+    <div
+      id="loader"
+      class="modal-container bg-gray-900/50 backdrop-blur-[2px] snap-none fixed top-0 right-0 left-0 bottom-0 z-50 justify-center items-center w-full md:inset-0 h-full max-h-full flex hidden"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="relative max-h-full">
+        <!-- Modal content -->
+        <div
+          class="modal-content relative justify-center items-center rounded-lg dark:bg-gray-700"
+        >
+          <!-- Modal header -->
+          <svg
+            aria-hidden="true"
+            role="status"
+            class="inline w-10 h-10 text-gray-200 animate-spin dark:text-gray-600"
+            viewBox="0 0 100 101"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="#D9E5EB"
+            />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="#506169"
+            />
+          </svg>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <script src="js/myscript.js"></script>
+    <script>
+      // Redirect based on domain name
+      const portfolioLink = document.getElementById("portfolio-link");
+      const currentDomain = window.location.hostname;
 
+      const loader = document.getElementById("loader");
 
-  <!-- Footer Section -->
+      loader.classList.remove("hidden");
 
+      if (currentDomain === "sathishmadhiyalagan.github.io") {
+        setTimeout(() => {
+          portfolioLink.href =
+            "https://sathishmadhiyalagan.github.io/portfolio/";
+          loader.classList.add("hidden");
+        }, 1500); // 2 seconds delay
+      } else {
+        setTimeout(() => {
+          portfolioLink.href = "http://127.0.0.1:5500/";
+          loader.classList.add("hidden");
+        }, 1500); // 2 seconds delay
+      }
 
-
-  <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-base font-normal text-[#506169] text-center">The World is waiting for you, don't waste
-        your time.</span>
-    </div>
-  </footer>
-
-
-
-  <script>
-    // Redirect based on domain name
-    const portfolioLink = document.getElementById('portfolio-link');
-    const currentDomain = window.location.hostname;
-
-    if (currentDomain === 'sathishmadhiyalagan.github.io') {
-      portfolioLink.href = 'https://sathishmadhiyalagan.github.io/portfolio/';
-    } else {
-      portfolioLink.href = 'http://127.0.0.1:5500/';
-    }
-
-    // Mobile menu toggle
-    document.getElementById('menu-button').addEventListener('click', function () {
-      const menu = document.getElementById('navbar-default');
-      menu.classList.toggle('hidden');
-    });
-  </script>
-</body>
-
+      // Mobile menu toggle
+      document
+        .getElementById("menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("navbar-default");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
 </html>
