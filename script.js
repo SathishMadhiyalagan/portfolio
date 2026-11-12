@@ -49,20 +49,6 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   document.querySelectorAll('.card').forEach(card => observer.observe(card));
 }
 
-// Move the portrait only on precise pointers. Touch keeps normal page scrolling.
-const stage = document.querySelector('.portrait-stage');
-const allowTilt = window.matchMedia('(pointer: fine) and (prefers-reduced-motion: no-preference)');
-stage.addEventListener('pointermove', event => {
-  if (!allowTilt.matches) return;
-  const bounds = stage.getBoundingClientRect();
-  stage.style.setProperty('--ry', ((event.clientX - bounds.left) / bounds.width - .5) * 9 + 'deg');
-  stage.style.setProperty('--rx', (.5 - (event.clientY - bounds.top) / bounds.height) * 9 + 'deg');
-});
-stage.addEventListener('pointerleave', () => {
-  stage.style.removeProperty('--rx');
-  stage.style.removeProperty('--ry');
-});
-
 // The line and milestones follow the reader's position in the career timeline.
 const timeline = document.querySelector('.timeline');
 const roles = [...timeline.querySelectorAll('.row')];

@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" role="img" aria-label="SM monogram">
-  <rect width="84" height="84" rx="18" fill="#a2edc7"/>
-  <g fill="none" stroke="#112b23" stroke-width="5" stroke-linecap="square" stroke-linejoin="bevel"><path pathLength="1" d="M44 28H27L18 37 35 43 25 54H10"/><path pathLength="1" d="M40 54 48 28 55 46 73 28 65 54"/></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="9" fill="#164837"/><text x="32" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="31" fill="#fff">SM</text></svg>
